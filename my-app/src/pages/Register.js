@@ -6,7 +6,9 @@ function Register() {
     username: '',
     email: '',
     password1: '',
-    password2: ''
+    password2: '',
+    bio: '',
+    location: ''
   });
 
   const [error, setError] = useState(null);
@@ -18,10 +20,10 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Replace with your backend endpoint
       const response = await axios.post('http://localhost:8000/dj-rest-auth/registration/', formData);
       console.log(response.data);
       alert('Registered successfully!');
+      // You can redirect or store token here if needed
     } catch (err) {
       setError(err.response?.data || 'Something went wrong');
     }
@@ -52,6 +54,16 @@ function Register() {
               <div className="mb-3">
                 <label htmlFor="password2" className="form-label">Confirm Password</label>
                 <input type="password" className="form-control" name="password2" id="password2" onChange={handleChange} required />
+              </div>
+
+              <div className="mb-3">
+                <label htmlFor="bio" className="form-label">Bio</label>
+                <textarea className="form-control" name="bio" id="bio" onChange={handleChange} />
+              </div>
+
+              <div className="mb-3">
+                <label htmlFor="location" className="form-label">Location</label>
+                <input type="text" className="form-control" name="location" id="location" onChange={handleChange} />
               </div>
 
               <div className="d-grid">
