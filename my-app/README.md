@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# SkillLoop Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SkillLoop is a skill-sharing platform where users can offer skills (e.g. piano, coding, languages) and request exchanges with other users.
 
-## Available Scripts
+This repository contains the **React frontend**, which talks to the separate **Django REST API** backend.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧱 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** (Create React App)
+- **React Router** for page navigation
+- **Axios** for HTTP requests
+- **Bootstrap** (via CDN or npm) for layout and basic styling
+- Deployed on **Vercel**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Backend (separate repo):
 
-### `npm test`
+- Django REST Framework
+- dj-rest-auth + django-allauth for auth
+- Deployed on Heroku (API)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔗 API Integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app communicates with the SkillLoop API via a single base URL config.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create this file:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**`src/api/config.js`**
 
-### `npm run eject`
+```js
+const API_BASE =
+  process.env.REACT_APP_API_BASE ||
+  'http://127.0.0.1:8000'; // Local dev fallback
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+export default API_BASE;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🚀 Running the Project Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone <your-frontend-repo-url>
+cd <your-frontend-folder>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install
 
-### Code Splitting
+3. Create a .env file (optional but recommended)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In the project root:
 
-### Analyzing the Bundle Size
+REACT_APP_API_BASE=http://127.0.0.1:8000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Start the dev server
 
-### Making a Progressive Web App
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The app runs at:
 
-### Advanced Configuration
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Make sure your Django API is running at http://127.0.0.1:8000
 
-### Deployment
+📄 Main Pages (MVP)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Planned pages:
 
-### `npm run build` fails to minify
+1. Home – overview of SkillLoop, call-to-action to sign up / log in
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Register – registration form that posts to /dj-rest-auth/registration/
+
+3. Login – login form that posts to /dj-rest-auth/login/
+
+4. Dashboard / My Skills – list skills for the logged-in user (future)
+
+5. Browse Skills – view all available skills (future)
+
+6. Skill Exchanges – view and create exchange requests (future)
+
+7. Contact – contact form that posts to /api/contact/
+
+🧪 Basic Flow (MVP)
+
+1. User registers via the frontend (POST to /dj-rest-auth/registration/).
+
+2. User logs in and receives a token (POST /dj-rest-auth/login/).
+
+3. Token is stored in the browser (e.g. localStorage).
+
+4. Authenticated requests (skills, exchanges) include:
+
+Authorization: Token <user-token>
+
+🌍 Deployment (Vercel)
+
+1. Push this repo to GitHub.
+
+2. In Vercel:
+
+    - Import the repository
+
+    - Set Environment variable:
+        REACT_APP_API_BASE = https://your-backend-url
+
+    - Deploy
