@@ -1,8 +1,15 @@
+// src/pages/Home.js
+import React from "react";
+
 function Home() {
   return (
-    <div className="text-center">
-      <h1>Welcome to SkillLoop!</h1>
-      <p>Connect. Learn. Grow.</p>
+    <div>
+      <h1>Welcome to SkillLoop</h1>
+      <p className="text-muted">
+        SkillLoop is a place where people exchange skills like piano, coding,
+        languages, and more. Create an account to list your skills and request
+        exchanges.
+      </p>
     </div>
   );
 }
