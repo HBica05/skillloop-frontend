@@ -51,7 +51,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/profile/me" className="nav-link">
+                  <NavLink to="/profile" className="nav-link">
                     My Profile
                   </NavLink>
                 </li>
