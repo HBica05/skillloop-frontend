@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import API_BASE from '../api/config';
-import { useAuth } from '../context/AuthContext';
 
 function Profile() {
-  const { currentUser } = useAuth();
   const [profile, setProfile] = useState(null);
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({ bio: '', location: '' });
