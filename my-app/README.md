@@ -372,7 +372,7 @@ heroku create your-app-name
 
 2. Set the buildpack:
 ```
-heroku buildpacks:set mars/create-react-app
+heroku buildpacks:set Express + Node.js buildpack
 ```
 
 3. Set environment variables:

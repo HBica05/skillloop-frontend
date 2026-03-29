@@ -54,7 +54,7 @@ function Register() {
       <div className="row justify-content-center">
         <div className="col-md-6 col-lg-5">
           <div className="card shadow p-4">
-            <h2 className="mb-4 text-center">Join SkillLoop</h2>
+            <h2 className="mb-4 text-center">Join SkilLoop</h2>
 
             {error && (
               <div className="alert alert-danger" role="alert">
