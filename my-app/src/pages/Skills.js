@@ -68,7 +68,7 @@ function Skills() {
                 <p className="small text-muted mb-2">By: {owner_username}</p>
               </div>
               <div className="card-footer d-flex gap-2">
-                <Link to={`/skills/${id}`} className="btn btn-sm btn-outline-primary">
+                <Link to={`/skills/${id}/edit`} className="btn btn-sm btn-outline-primary">
                   View
                 </Link>
                 {currentUser?.username === owner_username && (
