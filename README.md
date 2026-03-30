@@ -53,19 +53,19 @@ For logged-in users, the email field is automatically pre-filled to improve usab
 
 # Table of Contents
 
-1. Project Purpose
-2. User Stories
-3. UX Design
-4. Features
-5. React Architecture
-6. Tech Stack
-7. API Integration
-8. Testing
-9. Bugs
-10. Deployment
-11. Agile Development
-12. Accessibility
-13. Credits
+1. [Project Purpose](#project-purpose)
+2. [User Stories](#user-stories)
+3. [UX Design](#ux-design)
+4. [Features](#features)
+5. [React Architecture](#react-architecture)
+6. [Tech Stack](#tech-stack)
+7. [API Integration](#api-integration)
+8. [Testing](#testing)
+9. [Bugs](#bugs)
+10. [Deployment](#deployment)
+11. [Agile Development](#agile-development)
+12. [Accessibility](#accessibility)
+13. [Credits](#credits)
 
 # 🎯 Project Purpose
 SkillLoop is a collaborative learning platform where users exchange skills instead of paying for courses. A user who knows Python can offer tutoring in exchange for Guitar lessons from someone else — no money changes hands.
