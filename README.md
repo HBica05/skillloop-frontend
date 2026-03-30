@@ -2,9 +2,10 @@
 ## 🚀 Overview
 
 A skill-sharing web application built with React and Django REST Framework. Users can offer skills, browse what others teach, and request skill exchanges.
-Live site: add Heroku frontend URL here
-Backend API: add Heroku API URL here
-Backend repo: https://github.com/HBica05/skillLoop-API
+
+Live site: https://skillloopfrontend-952dcb19a921.herokuapp.com
+
+Backend API: https://skillloop-api-hbica-3bb338c1557b.herokuapp.com
 ---
 
 # Table of Contents
@@ -12,14 +13,16 @@ Backend repo: https://github.com/HBica05/skillLoop-API
 1. Project Purpose
 2. User Stories
 3. UX Design
-5. Features
-6. React Architecture
-7. Tech Stack
-8. API Integration
-9. Testing
-10. Bugs
-11. Deployment
-12. Credits
+4. Features
+5. React Architecture
+6. Tech Stack
+7. API Integration
+8. Testing
+9. Bugs
+10. Deployment
+11. Agile Development
+12. Accessibility
+13. Credits
 
 # 🎯 Project Purpose
 SkillLoop is a collaborative learning platform where users exchange skills instead of paying for courses. A user who knows Python can offer tutoring in exchange for Guitar lessons from someone else — no money changes hands.
@@ -372,7 +375,7 @@ heroku create your-app-name
 
 2. Set the buildpack:
 ```
-heroku buildpacks:set Express + Node.js buildpack
+heroku buildpacks:set heroku/nodejs
 ```
 
 3. Set environment variables:
@@ -418,6 +421,18 @@ The .env file is listed in .gitignore and is never committed to the repository.
 - Claude AI — development assistance and code review
 - ChatGPT — development assistance
 - GitHub — version control and project management
+- Canva — hero background image design (https://www.canva.com)
+
+## Agile Development
+
+This project was developed using Agile methodology. User stories were created as GitHub Issues and tracked on a GitHub Projects board with To Do, In Progress and Done columns.
+
+## Accessibility
+
+- Semantic HTML elements used throughout
+- All form inputs have associated labels
+- aria-required attributes on required fields
+- Bootstrap components follow WCAG accessibility standards
 
 ---
 
