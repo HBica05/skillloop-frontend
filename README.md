@@ -116,7 +116,7 @@ User stories are tracked on the GitHub Projects board.
 | As a logged-in user I want to accept or decline exchange requests so I can manage my interactions | Accept/Decline buttons only shown to the recipient |
 | As a logged-in user I want to view my exchanges so I can track my skill-sharing activity |Exchanges page shows all where user is requester or recipient |
 
-# 🧠 UX Design
+# UX Design
 ## 🎨 Design Goals
 - Simple, uncluttered navigation
 - Clear feedback on all user actions (success toasts, error alerts)
