@@ -56,7 +56,7 @@ For logged-in users, the email field is automatically pre-filled to improve usab
 
 1. [🎯 Project Purpose](#project-purpose)
 2. [User Stories](#user-stories)
-3. [🧠UX Design](#ux-design)
+3. [UX Design](#ux-design)
 4. [Features](#features)
 5. [React Architecture](#react-architecture)
 6. [Tech Stack](#tech-stack)
