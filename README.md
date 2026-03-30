@@ -6,6 +6,49 @@ A skill-sharing web application built with React and Django REST Framework. User
 Live site: https://skillloopfrontend-952dcb19a921.herokuapp.com
 
 Backend API: https://skillloop-api-hbica-3bb338c1557b.herokuapp.com
+
+## Screenshots
+The following screenshots demonstrate the core features and user interface of the SkillLoop application.
+
+![](docs/screenshots/allscreens.jpg)
+
+### Home page
+![Home page](docs/screenshots/image.png)
+The home page introduces users to SkillLoop and provides a clear call-to-action to explore skills or sign up. It highlights the purpose of the platform — enabling users to exchange skills with others.
+
+### Skills list
+![Skills list](docs/screenshots/skills.png)
+The skills page displays all available skills shared by users.  
+Users can:
+- [Search for skills](docs/screenshots/search.png)
+- [Filter by category](docs/screenshots/filter.png)
+
+- View details of each skill
+- [Request a skill exchange](docs/screenshots/request-exchange.png)
+
+### Exchanges
+![Exchanges](docs/screenshots/exchanges.png)
+
+This page allows users to manage their skill exchanges.  
+Users can:
+- View incoming and outgoing requests
+- Accept or decline requests
+- Mark exchanges as completed
+
+### My Profile Page
+![My Profile](docs/screenshots/my-profile.png)
+
+The profile page allows users to manage their personal information.  
+Users can:
+- Edit their bio and location
+- View their posted skills
+- Track their activity on the platform
+
+### Contact us Page
+![Contact us](docs/screenshots/contact-us.png)
+
+The contact page allows users to send messages to the platform administrators.  
+For logged-in users, the email field is automatically pre-filled to improve usability.
 ---
 
 # Table of Contents
