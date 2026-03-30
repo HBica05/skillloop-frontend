@@ -1,4 +1,4 @@
-# 📚 SkillLoop Frontend
+# 📚 SkilLoop Frontend
 ## 🚀 Overview
 
 A skill-sharing web application built with React and Django REST Framework. Users can offer skills, browse what others teach, and request skill exchanges.
@@ -8,7 +8,7 @@ Live site: https://skillloopfrontend-952dcb19a921.herokuapp.com
 Backend API: https://skillloop-api-hbica-3bb338c1557b.herokuapp.com
 
 ## Screenshots
-The following screenshots demonstrate the core features and user interface of the SkillLoop application.
+The following screenshots demonstrate the core features and user interface of the SkilLoop application.
 
 ![](docs/screenshots/allscreens.jpg)
 
@@ -46,16 +46,17 @@ Users can:
 
 ### Contact us Page
 ![Contact us](docs/screenshots/contact-us.png)
-
 The contact page allows users to send messages to the platform administrators.  
 For logged-in users, the email field is automatically pre-filled to improve usability.
+
+
 ---
 
 # Table of Contents
 
-1. [Project Purpose](#project-purpose)
+1. [🎯 Project Purpose](#project-purpose)
 2. [User Stories](#user-stories)
-3. [UX Design](#ux-design)
+3. [🧠 UX Design](#ux-design)
 4. [Features](#features)
 5. [React Architecture](#react-architecture)
 6. [Tech Stack](#tech-stack)
@@ -63,12 +64,12 @@ For logged-in users, the email field is automatically pre-filled to improve usab
 8. [Testing](#testing)
 9. [Bugs](#bugs)
 10. [Deployment](#deployment)
-11. [Agile Development](#agile-development)
-12. [Accessibility](#accessibility)
-13. [Credits](#credits)
+11. [Credits](#credits)
+12. [Agile Development](#agile-development)
+13. [Accessibility](#accessibility) 
 
 # 🎯 Project Purpose
-SkillLoop is a collaborative learning platform where users exchange skills instead of paying for courses. A user who knows Python can offer tutoring in exchange for Guitar lessons from someone else — no money changes hands.
+SkilLoop is a collaborative learning platform where users exchange skills instead of paying for courses. A user who knows Python can offer tutoring in exchange for Guitar lessons from someone else — no money changes hands.
 
 
 ## Target Audience
@@ -128,7 +129,7 @@ The following wireframes were created during planning:
 ## Home page
 
 +----------------------------------+
-| SkillLoop   Home Skills Exchanges|
+| SkilLoop   Home Skills Exchanges|
 +----------------------------------+
 |                                  |
 |   Welcome to SkillLoop           |
@@ -485,5 +486,4 @@ Haadiyah Bica
 GitHub: https://github.com/HBica05
 
 ---
-
-
+[⬆ Back to top](#skilloop-frontend)
